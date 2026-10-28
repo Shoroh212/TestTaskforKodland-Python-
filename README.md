@@ -13,8 +13,7 @@
 ### Консоль 3
 
 написать py game.py
-После чего отправить start телеграмм боту @catcoin_remote_bot
-
+После чего отправить start телеграмм боту 
 👉 [@catcoin_remote_bot](https://t.me/catcoin_remote_bot)
 
 
