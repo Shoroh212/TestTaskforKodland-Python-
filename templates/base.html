@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Cat Game{% endblock %}</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f4f1ea;
+            color: #2b2b2b;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+        nav a { margin-right: 16px; color: #c86a1e; }
+        table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        th, td { padding: 8px 12px; border-bottom: 1px solid #ddd; text-align: left; }
+        th { background: #e9e2d3; }
+        td.number { text-align: right; font-variant-numeric: tabular-nums; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('leaders') }}">Таблица лидеров</a>
+        <a href="{{ url_for('about') }}">Обо мне</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>

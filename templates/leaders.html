@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Таблица лидеров{% endblock %}
+{% block content %}
+<h1>Таблица лидеров</h1>
+{% if rows %}
+<table>
+    <tr>
+        <th>#</th>
+        <th>Игрок</th>
+        <th>В игре</th>
+        <th>Монеты</th>
+    </tr>
+    {% for row in rows %}
+    <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ row.name }}</td>
+        <td class="number">{{ row.duration }}</td>
+        <td class="number">{{ row.coins }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>Пока никто не играет. Напиши
+<a href="https://t.me/catcoin_remote_bot">@catcoin_remote_bot</a>
+команду <code>/join</code>.</p>
+{% endif %}
+{% endblock %}
