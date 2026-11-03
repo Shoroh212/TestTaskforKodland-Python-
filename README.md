@@ -17,5 +17,5 @@
 👉 [@catcoin_remote_bot](https://t.me/catcoin_remote_bot)
 
 
-![Скриншот 2](images/Снимок%20экрана%20(607).png)
+
 
